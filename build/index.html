@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <section class="h-screen md:h-[600px] bg-cover bg-center bg-no-repeat w-full p-6 flex flex-col justify-between"
+        style="background-image: url(&quot;./img/hero-image.png&quot;)">
+        <div class="w-full">
+            <nav
+                class="md:w-[1200px] container m-auto flex justify-between lg:justify-center items-center text-gray-900 gap-16 bg-white rounded-xl py-2 px-5">
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600 text-main_blue" href="#">Home</a>
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600" href="#">About</a>
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600" href="#">Newsletter</a>
+                <a href="/"> <img class="h-9" src="./img/logo.png" alt="logo" /></a>
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600" href="#">Rooms</a>
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600" href="#">Services</a>
+                <a class="hidden lg:inline-block text-[18px] hover:text-gray-600" href="#">Pricing</a>
+                <p class="text-3xl cursor-pointer lg:hidden">&#9776;</p>
+            </nav>
+        </div>
+
+        <div class="md:w-[1200px] container mx-auto">
+            <h1 class="text-white text-3xl md:text-5xl md:mb-20 font-bold w-full text-center md:text-left md:w-1/2">
+                Discover Extraordinary <br />
+                Confort in Hotels
+            </h1>
+        </div>
+    </section>
+
+    <!-- Booking section -->
+    <section class="my-16 px-5">
+        <div class="md:w-[1200px] container m-auto bg-very_light_blue rounded-3xl p-5 pb-10">
+            <div class="text-center ">
+                <h2 class="text-2xl font-semibold mb-1  text-gray-900">Book a Room</h2>
+                <p class="text-gray-500 mb-10">Discover the perfect space for you!</p>
+            </div>
+
+
+            <!-- Book inputs -->
+            <form class="flex flex-col items-center gap-5 md:flex-row justify-center md:items-end">
+                <div class="flex flex-col ">
+                    <label class="text-gray-900 text-sm font-semibold mb-1" for="date">Date</label>
+                    <input placeholder="Check Avilable" onfocus="(this.type='date')" type="date" name="date" id="date"
+                        class=" bg-white px-8 py-2 rounded-lg active:border-gray-500 outline-none">
+                </div>
+
+                <div class="flex flex-col ">
+                    <label class="text-gray-900 text-sm font-semibold mb-1" for="date">Person</label>
+                    <!-- <input placeholder="Check Avilable" onfocus="(this.type='date')" type="date" name="date" id="date"
+                        class=" bg-white px-10 py-2 rounded-lg active:border-gray-500 outline-none"> -->
+                    <div class="flex bg-white px-8 py-2 rounded-lg active:border-gray-500 outline-none">
+                        <div class="flex space-x-2 justify-center items-center">
+                            <i class="fa-solid fa-person"></i>
+                            <p class="text-xs font-semibold">Adoults</p>
+                            <select name="adoults" id="adoults" class="ps-5 bg-transparent">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="flex space-x-2 justify-center items-center ms-5">
+                            <i class="fa-solid fa-baby"></i>
+                            <p class="text-xs font-semibold">Children</p>
+                            <select name="adoults" id="adoults" class="ps-5 bg-transparent">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="bg-light_blue hover:bg-opacity-90 text-white uppercase border-none rounded-lg px-6 py-2 mt-5 md:mt-0 md:w-1/4">Book
+                    Now</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Offer section -->
+    <section
+        class="mt-16 px-10 py-8 flex flex-col md:flex-row items-center justify-center gap-6 bg-gradient-to-t from-gray-200 to-gray-100">
+        <div>
+            <div class="relative ">
+                <img class="h-[504px] rounded-3xl bg-gradient-to-t" src="./img/Offer-01.jpg" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent opacity-60 rounded-3xl">
+                </div>
+                <h3 class="absolute bottom-10 left-1/2 -translate-x-1/2  font-semibold text-3xl text-white">
+                    Rooms</h3>
+            </div>
+        </div>
+
+        <div class="grid gap-6 grid-cols-2 grid-rows-2">
+            <div class="relative ">
+                <img class="h-60 rounded-3xl bg-gradient-to-t" src="./img/0ffer-01.png" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent opacity-60 rounded-3xl">
+                </div>
+                <h3 class="absolute bottom-10 left-1/2 -translate-x-1/2 font-semibold text-2xl text-white">
+                    Dining</h3>
+            </div>
+
+            <div class="relative ">
+                <img class="h-60 rounded-3xl bg-gradient-to-t" src="./img/0ffer-02.png" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent opacity-60 rounded-3xl">
+                </div>
+                <h3 class="absolute bottom-10 left-1/2 -translate-x-1/2 font-semibold text-2xl text-white text-center">
+                    Conferences &
+                    Meetings</h3>
+            </div>
+
+            <div class="relative ">
+                <img class="h-60 rounded-3xl bg-gradient-to-t" src="./img/0ffer-03.png" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent opacity-60 rounded-3xl">
+                </div>
+                <h3 class="absolute bottom-10 left-1/2 -translate-x-1/2 font-semibold text-2xl text-white text-center">
+                    Service & Facilities</h3>
+            </div>
+
+            <div class="relative ">
+                <img class="h-60 rounded-3xl bg-gradient-to-t" src="./img/0ffer-04.png" alt="">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent opacity-60 rounded-3xl">
+                </div>
+                <h3 class="absolute bottom-10 left-1/2 -translate-x-1/2 font-semibold text-2xl text-white text-center">
+                    Wedding Package</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Special Offers Section -->
+    <section class="px-14 py-8 bg-gradient-to-t from-gray-200 to-gray-100">
+
+        <h3 class="text-main_blue text-2xl font-semibold mb-5">Special Offers</h3>
+
+        <div class="flex items-center justify-between mb-3">
+            <h3 class="text-4xl font-semibold text-gray-900">Best offer of the month</h3>
+            <a class="text-main_blue text-xl font-semibold hover:text-opacity-80" href="#">View All</a>
+        </div>
+
+        <p class="text-gray-600 w-1/3">Experience Fantastic Benefits and Obtain Better Rates When You Make a Direct
+            Booking on
+            Our Official Website
+        </p>
+
+
+        <article class="flex flex-col gap-5 justify-center md:flex-row mt-5">
+            <!-- Card 1 -->
+            <div class="bg-gray-100 rounded-3xl p-3 shadow-xl flex flex-col w-60 text-gray-900">
+                <img class="rounded-t-2xl " src="./img/specal-offer-01.png" alt="">
+
+                <div class="mt-5">
+                    <h3 class="text-sm text-gray-500 font-semibold">Room</h3>
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-xl">Honeymoon</h3>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-person "></i>
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 text-xs mt-5">Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+
+                <h3 class="font-bold text-3xl my-5 text-center">$699 <span
+                        class="text-xs font-light text-gray-500">/night</span>
+                </h3>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-100 rounded-3xl p-3 shadow-xl flex flex-col w-60 text-gray-900">
+                <img class="rounded-t-2xl" src="./img/specal-offer-02.png" alt="">
+
+                <div class="mt-5">
+                    <h3 class="text-sm text-gray-500 font-semibold">Room</h3>
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-xl">Meetings</h3>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-person "></i>
+                            <p>14</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 text-xs mt-5">Experience an Exclusively Private Environment to Boost Your
+                    Productivity</p>
+
+                <h3 class="font-bold text-3xl my-5 text-center">$699 <span
+                        class="text-xs font-light text-gray-500">/night</span>
+                </h3>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-100 rounded-3xl p-3 shadow-xl flex flex-col w-60 text-gray-900">
+                <img class="rounded-t-2xl" src="./img/specal-offer-03.png" alt="">
+
+                <div class="mt-5">
+                    <h3 class="text-sm text-gray-500 font-semibold">Dining</h3>
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-xl">Romantic Dining</h3>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-person "></i>
+                            <p>5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 text-xs mt-5">Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+
+                <h3 class="font-bold text-3xl my-5 text-center">$699 <span
+                        class="text-xs font-light text-gray-500">/night</span>
+                </h3>
+            </div>
+
+        </article>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-main_black w-full p-12 pb-0">
+
+        <div class=" flex flex-col md:flex-row justify-center gap-32">
+            <!-- Left -->
+            <div class="flex flex-col justify-center gap-5 w-1/3">
+                <h3 class="text-2xl font-semibold text-white">Newsletter & Special Promo</h3>
+                <form action="" class="bg-gray-50 w-96 flex justify-between rounded-md">
+                    <input class="p-3 bg-transparen rounded-md border-none active:outline-none" type="email"
+                        placeholder="Enter your email here">
+                    <a
+                        class="bg-main_blue py-3 px-5 text-gray-50 text-lg font-semibold rounded-e-md hover:bg-opacity-80 cursor-pointer">Subscribe</a>
+                </form>
+            </div>
+
+            <!-- Right -->
+            <div class="flex flex-col w-1/3">
+                <div class="flex justify-center">
+                    <img class="w-24 mb-10" src="./img/logo-white.png" alt="">
+                </div>
+
+                <div class="flex items-center justify-between text-gray-50">
+                    <ul>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">About Us</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Contact</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Location</a></li>
+                    </ul>
+                    <ul>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">FAQ</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Terms Of Use</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Privacy Police</a></li>
+                    </ul>
+                    <ul>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Services & Facilities</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Careers</a></li>
+                        <li class="mb-4 hover:text-main_blue"><a href="#">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+            <p class="w-1/3 text-center border-t-gray-500 border-t-[1px] text-gray-50 text-sm p-4">© Copyright Booking
+                Hotels. All
+                right
+                reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
