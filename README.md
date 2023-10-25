@@ -1,4 +1,4 @@
 # booking-platform
 Booking platform made from figma file. First layout made wth Tailwind
 
-<img src="./img/thumbnail.png">
+<img src="./build/img/thumbnail.png" width='500'>
