@@ -1069,15 +1069,17 @@ video {
   outline-offset: 2px;
 }
 
-.mobile_menu{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 1000;
-  transform: translate(100%);
-  transition: all .25s ease-in-out;
+@media (max-width: 768px) {
+  .mobile_menu{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    transform: translate(100%);
+    transition: all .25s ease-in-out;
+  }
 }
 
 .active-menu{
@@ -1239,10 +1241,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:inline-block {
     display: inline-block;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:justify-center {
